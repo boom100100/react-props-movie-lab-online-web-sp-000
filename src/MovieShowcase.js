@@ -6,6 +6,10 @@ export default class MovieShowcase extends Component {
 
   generateMovieCards = () => {
     return movieData.map(x => {return <MovieCard />});
+    //title: 'Choux and Maru go to Istanbul',
+    IMDBRating: 3,
+    genres: ['cats', 'adventure', 'romance'],
+    poster
   }
 
   render() {
