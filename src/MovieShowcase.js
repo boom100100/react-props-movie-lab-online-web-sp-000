@@ -5,11 +5,7 @@ import movieData from './data.js'
 export default class MovieShowcase extends Component {
 
   generateMovieCards = () => {
-    return movieData.map(x => {return <MovieCard />});
-    //title: 'Choux and Maru go to Istanbul',
-    IMDBRating: 3,
-    genres: ['cats', 'adventure', 'romance'],
-    poster
+    return movieData.map(x => {return <MovieCard title=x.title IMDBRating=x.IMDBRating genres=x.genres poster=x.poster/>});
   }
 
   render() {
